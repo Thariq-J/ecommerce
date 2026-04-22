@@ -1,0 +1,52 @@
+[
+  {
+    "_id": {
+      "$oid": "64b1f4a9b6c9b84618e7f1a3"
+    },
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "password": "password123",
+    "_class": "com.ecommerce.model.User"
+  },
+  {
+    "_id": {
+      "$oid": "64b1f4cbb6c9b84618e7f1a4"
+    },
+    "name": "Wireless Mouse",
+    "description": "Ergonomic wireless mouse",
+    "price": 29.99,
+    "category": "Electronics",
+    "imageUrl": "https://example.com/mouse.jpg",
+    "_class": "com.ecommerce.model.Product"
+  },
+  {
+    "_id": {
+      "$oid": "64b1f4dfb6c9b84618e7f1a5"
+    },
+    "userId": "64b1f4a9b6c9b84618e7f1a3",
+    "products": [
+      {
+        "_id": {
+          "$oid": "64b1f4cbb6c9b84618e7f1a4"
+        },
+        "name": "Wireless Mouse",
+        "description": "Ergonomic wireless mouse",
+        "price": 29.99,
+        "category": "Electronics",
+        "imageUrl": "https://example.com/mouse.jpg"
+      }
+    ],
+    "totalPrice": 29.99,
+    "_class": "com.ecommerce.model.Cart"
+  },
+  {
+    "_id": {
+      "$oid": "64b1f501b6c9b84618e7f1a6"
+    },
+    "userId": "64b1f4a9b6c9b84618e7f1a3",
+    "amount": 29.99,
+    "status": "Payment Successful",
+    "transactionId": "b18f0ee0-3b68-4561-9c60-abcd1234efgh",
+    "_class": "com.ecommerce.model.Payment"
+  }
+]
